@@ -16,14 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ChallengeSelector"
-            android:label="@string/title_activity_challenge_selector"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ChallengeDisplay"
-            android:label="@string/title_activity_challenge_complete"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ChallengeDisplay">
+
+        </activity>
     </application>
 
 </manifest>
