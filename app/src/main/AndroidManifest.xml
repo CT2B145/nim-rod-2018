@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.james.cruzhacks2018jmmm">
 
+    <uses-sdk android:minSdkVersion="21"
+        android:targetSdkVersion="24"
+        android:maxSdkVersion="27" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,11 +23,7 @@
         <activity android:name=".ChallengeDisplay">
 
         </activity>
-        <activity android:name=".ChallengeSelector"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+        <activity android:name=".ChallengeSelector">
         </activity>
     </application>
 
