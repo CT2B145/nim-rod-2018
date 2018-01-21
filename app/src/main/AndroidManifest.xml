@@ -37,7 +37,7 @@
         <!-- android:valuMainMenuvity" /> -->
         <!-- </activity> -->
         <!-- <activity -->
-        <!-- android:name=".Settings" -->
+        <!-- android:namMenuings" -->
         <!-- android:parentActivityNamMainMenuvity"> -->
 
 
@@ -48,9 +48,8 @@
         <!-- </activity> -->
         <activity android:name=".About" />
         <activity android:name=".Options" />
-        <activity android:name=".Settings" />
+        <activity android:name=".Menu" />
         <activity android:name=".ChallengeDisplay"></activity>
-        <activity android:name=".ChallengeSelector"></activity>
         <activity android:name=".MainMenu"></activity>
         <activity android:name=".ProgessiveBar"></activity>
     </application>

@@ -16,7 +16,7 @@ public class About extends AppCompatActivity {
 
     public void backButton (View view){
         //Takes you back to the main menu.
-        Intent intent = new Intent(this, Settings.class);
+        Intent intent = new Intent(this, Menu.class);
         startActivity(intent);
     }
     }

@@ -35,16 +35,15 @@ public class ChallengeDisplay extends AppCompatActivity {
 
         TextView challengeText = (TextView) findViewById(R.id.challenge);
         challengeText.setText( getRandChallenge(), TextView.BufferType.EDITABLE);
-        createChallengeList();
-        //list.saveList();
+//        createChallengeList();
+//        list.saveList();
 
 
     }
 
     public void goButton(View view) {
-        System.out.println(13423432);
 
-        Intent intent = new Intent(this, ChallengeSelector.class);
+        Intent intent = new Intent(this, MainMenu.class);
         startActivity(intent);
     }
 

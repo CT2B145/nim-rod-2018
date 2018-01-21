@@ -18,7 +18,7 @@ public class MainMenu extends AppCompatActivity {
     public void sendMessage(View view){
 
         //Takes you to the challenge
-        Intent intent = new Intent(this, ChallengeSelector.class);
+        Intent intent = new Intent(this, ChallengeDisplay.class);
 //        EditText editText = (EditText) findViewById(R.id.editText);
 //        String message = editText.getText().toString();
 //        intent.putExtra(EXTRA_MESSAGE, message);
@@ -28,7 +28,7 @@ public class MainMenu extends AppCompatActivity {
 
     public void sendSettings(View view){
         //Takes you straight to settings
-        Intent intent = new Intent(this, Settings.class);
+        Intent intent = new Intent(this, Menu.class);
 //        EditText editText = (EditText) findViewById(R.id.editText);
 //        String message = editText.getText().toString();
 //        intent.putExtra(EXTRA_MESSAGE, message);
