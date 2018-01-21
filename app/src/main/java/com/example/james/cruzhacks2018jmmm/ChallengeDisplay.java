@@ -42,11 +42,19 @@ public class ChallengeDisplay extends AppCompatActivity {
 
     }
 
-    protected void goButton(View view) {
+    public void goButton(View view) {
+        System.out.println(13423432);
 
         Intent intent = new Intent(this, ChallengeSelector.class);
         startActivity(intent);
     }
+
+    public void stopButton(View view) {
+
+        Intent intent = new Intent(this, MainMenu.class);
+        startActivity(intent);
+    }
+
 
     protected String getRandChallenge()
     {

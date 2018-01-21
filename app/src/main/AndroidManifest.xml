@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="com.example.james.cruzhacks2018jmmm">
 
-    <uses-sdk android:minSdkVersion="21"
-        android:targetSdkVersion="24"
-        android:maxSdkVersion="27" />
+    <uses-sdk
+        android:maxSdkVersion="27"
+        android:minSdkVersion="21"
+        android:targetSdkVersion="24" />
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -22,37 +25,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<!--<<<<<<< HEAD-->
-        <!--<activity-->
-            <!--android:name=".DisplayMessageActivity"-->
-            <!--android:parentActivityNamMainMenuvity">-->
+        <!-- <<<<<<< HEAD -->
+        <!-- <activity -->
+        <!-- android:name=".DisplayMessageActivity" -->
+        <!-- android:parentActivityNamMainMenuvity"> -->
 
-            <!--&lt;!&ndash; The meta-data tag is required if you support API level 15 and lower &ndash;&gt;-->
-            <!--<meta-data-->
-                <!--android:name="android.support.PARENT_ACTIVITY"-->
-                <!--android:valuMainMenuvity" />-->
-        <!--</activity>-->
-        <!--<activity-->
-            <!--android:name=".Settings"-->
-            <!--android:parentActivityNamMainMenuvity">-->
 
-            <!--&lt;!&ndash; The meta-data tag is required if you support API level 15 and lower &ndash;&gt;-->
-            <!--<meta-data-->
-                <!--android:name="android.support.PARENT_ACTIVITY"-->
-                <!--android:valuMainMenuvity" />-->
-        <!--</activity>-->
+        <!-- &lt;!&ndash; The meta-data tag is required if you support API level 15 and lower &ndash;&gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.PARENT_ACTIVITY" -->
+        <!-- android:valuMainMenuvity" /> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name=".Settings" -->
+        <!-- android:parentActivityNamMainMenuvity"> -->
+
+
+        <!-- &lt;!&ndash; The meta-data tag is required if you support API level 15 and lower &ndash;&gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.PARENT_ACTIVITY" -->
+        <!-- android:valuMainMenuvity" /> -->
+        <!-- </activity> -->
         <activity android:name=".About" />
-        <activity android:name=".Options"></activity>
-
-        <activity android:name=".ChallengeDisplay">
-
-        </activity>
-        <activity android:name=".ChallengeSelector">
-        </activity>
-
-        <activity android:name=".MainMenu" >
-        </activity>
-
+        <activity android:name=".Options" />
+        <activity android:name=".Settings" />
+        <activity android:name=".ChallengeDisplay"></activity>
+        <activity android:name=".ChallengeSelector"></activity>
+        <activity android:name=".MainMenu"></activity>
+        <activity android:name=".ProgessiveBar"></activity>
     </application>
 
 </manifest>

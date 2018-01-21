@@ -14,7 +14,7 @@ public class Options extends AppCompatActivity {
 
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainMenu.EXTRA_MESSAGE);
+//        String message = intent.getStringExtra(MainMenu.EXTRA_MESSAGE);
 
     }
     public void backButton (View view){

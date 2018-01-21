@@ -7,7 +7,7 @@ import android.view.View;
 
 
 public class MainMenu extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+   // public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +26,7 @@ public class MainMenu extends AppCompatActivity {
     }
 
 
-    public void sendMessage2(View view){
+    public void sendSettings(View view){
         //Takes you straight to settings
         Intent intent = new Intent(this, Settings.class);
 //        EditText editText = (EditText) findViewById(R.id.editText);

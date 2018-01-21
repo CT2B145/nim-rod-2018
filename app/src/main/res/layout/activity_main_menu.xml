@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
-        android:text="Choose da wei?"
+        android:text="Challenge Approaches!"
         android:textStyle="bold"
         android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,7 +25,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:onClick="sendMessage"
-        android:text="Aggressive"
+        android:text="Nope."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
@@ -38,7 +38,6 @@
     <!-- Dont worry about the editText below, if it works, why change it?-->
 
 
-
     <Button
         android:id="@+id/button"
         android:layout_width="304dp"
@@ -46,7 +45,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:onClick="sendMessage"
-        android:text="Subtle"
+        android:text="Ready?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -62,7 +61,7 @@
         android:layout_height="49dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:onClick="sendMessage"
+        android:onClick="sendSettings"
         android:text="Menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.054"
