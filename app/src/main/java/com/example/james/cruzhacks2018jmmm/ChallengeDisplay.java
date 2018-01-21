@@ -64,7 +64,7 @@ public class ChallengeDisplay extends AppCompatActivity {
 
     public void goButton(View view) {
 
-        Intent intent = new Intent(this, MainMenu.class);
+        Intent intent = new Intent(this, ProgessiveBar.class);
         startActivity(intent);
     }
 
