@@ -17,7 +17,7 @@
         android:fontFamily="monospace"
         android:inputType="textMultiLine"
         android:singleLine="true"
-        android:text="About us                   Everytime I use my energy hogging computer, I sadly punch another polar bear in the face."
+        android:text="About us                   Everytime I ride a bus, I sadly punch another polar bear in the face. Also, this is the first time using Android studio. This was quite a fun experience."
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
