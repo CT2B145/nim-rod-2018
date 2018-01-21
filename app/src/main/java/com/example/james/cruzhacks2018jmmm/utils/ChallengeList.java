@@ -52,9 +52,7 @@ public class ChallengeList {
         {
             e.printStackTrace(System.err);
         }
-        System.out.println(list);
         is.close();
-        os.close();
 
     }
 
@@ -125,9 +123,8 @@ public class ChallengeList {
     //will save our list to the mem, testing stuff rn
     public void saveList() {
         try{
-            os.flush();
+            System.out.println(list.toString());
             os.write(list.toString().getBytes());
-            os.close();
         }
         catch(IOException e)
         {
@@ -135,6 +132,15 @@ public class ChallengeList {
         }
     }
 
+    public void close() {
+        try{
+            os.close();
+        }
+        catch(IOException e)
+        {
+            e.printStackTrace(System.err);
+        }
+    }
     public String toString()
     {
         return list.toString();
