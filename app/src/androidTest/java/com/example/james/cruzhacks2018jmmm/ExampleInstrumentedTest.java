@@ -1,4 +1,4 @@
-package mjpon.ucsc.edu.myapplication;
+package com.example.james.cruzhacks2018jmmm;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("mjpon.ucsc.edu.myapplication", appContext.getPackageName());
+        assertEquals("com.example.james.cruzhacks2018jmmm", appContext.getPackageName());
     }
 }

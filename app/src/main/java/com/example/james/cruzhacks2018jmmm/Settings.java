@@ -1,11 +1,9 @@
-package mjpon.ucsc.edu.myapplication;
+package com.example.james.cruzhacks2018jmmm;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 
 public class Settings extends AppCompatActivity {
 
@@ -15,7 +13,7 @@ public class Settings extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
         // Get the Intent that started this activity and extract the string
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String message = intent.getStringExtra(MainMenu.EXTRA_MESSAGE);
     }
 
         // Capture the layout's TextView and set the string as its text
@@ -41,7 +39,7 @@ public class Settings extends AppCompatActivity {
 
     public void backButton (View view){
         //Takes you back to the main menu.
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, MainMenu.class);
         startActivity(intent);
     }
 }

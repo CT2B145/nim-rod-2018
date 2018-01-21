@@ -1,4 +1,4 @@
-package mjpon.ucsc.edu.myapplication;
+package com.example.james.cruzhacks2018jmmm;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

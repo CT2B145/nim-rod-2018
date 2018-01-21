@@ -1,4 +1,4 @@
-package mjpon.ucsc.edu.myapplication;
+package com.example.james.cruzhacks2018jmmm;
 
 import org.junit.Test;
 

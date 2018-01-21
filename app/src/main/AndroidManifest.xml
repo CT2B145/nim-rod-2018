@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="mjpon.ucsc.edu.myapplication">
+
+    package="com.example.james.cruzhacks2018jmmm">
+
+    <uses-sdk android:minSdkVersion="21"
+        android:targetSdkVersion="24"
+        android:maxSdkVersion="27" />
+
 
     <application
         android:allowBackup="true"
@@ -16,26 +22,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".DisplayMessageActivity"
-            android:parentActivityName=".MainActivity">
+<!--<<<<<<< HEAD-->
+        <!--<activity-->
+            <!--android:name=".DisplayMessageActivity"-->
+            <!--android:parentActivityNamMainMenuvity">-->
 
-            <!-- The meta-data tag is required if you support API level 15 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity
-            android:name=".Settings"
-            android:parentActivityName=".MainActivity">
+            <!--&lt;!&ndash; The meta-data tag is required if you support API level 15 and lower &ndash;&gt;-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:valuMainMenuvity" />-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name=".Settings"-->
+            <!--android:parentActivityNamMainMenuvity">-->
 
-            <!-- The meta-data tag is required if you support API level 15 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
+            <!--&lt;!&ndash; The meta-data tag is required if you support API level 15 and lower &ndash;&gt;-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:valuMainMenuvity" />-->
+        <!--</activity>-->
         <activity android:name=".About" />
         <activity android:name=".Options"></activity>
+
+        <activity android:name=".ChallengeDisplay">
+
+        </activity>
+        <activity android:name=".ChallengeSelector">
+        </activity>
+
+        <activity android:name=".MainMenu" >
+        </activity>
+
     </application>
 
 </manifest>

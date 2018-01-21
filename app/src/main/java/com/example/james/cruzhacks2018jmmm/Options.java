@@ -1,4 +1,4 @@
-package mjpon.ucsc.edu.myapplication;
+package com.example.james.cruzhacks2018jmmm;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -14,7 +14,7 @@ public class Options extends AppCompatActivity {
 
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String message = intent.getStringExtra(MainMenu.EXTRA_MESSAGE);
 
     }
     public void backButton (View view){
