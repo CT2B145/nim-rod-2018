@@ -19,6 +19,12 @@
         <activity android:name=".ChallengeDisplay">
 
         </activity>
+        <activity android:name=".ChallengeSelector"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>
