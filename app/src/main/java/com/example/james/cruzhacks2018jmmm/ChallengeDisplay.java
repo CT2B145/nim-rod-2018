@@ -21,9 +21,32 @@ public class ChallengeDisplay extends AppCompatActivity {
     Intent intent;
 
     static String challengeFile = "challenges.json";
-        ChallengeList list = new ChallengeList();
+    ChallengeList list = null;
 
-    String[] challenges = {"do something", "kill someone", "eat a pie", "I hate the world", "just fucking work already"};
+    String[] challenges = {"Do a pushup",
+            "Walk outside",
+            "Touch a tree",
+            "Find some grass. Look at it!",
+            "Touch a friend's hand",
+            "Walk to a friend and smile :)",
+            "Do a push-up!",
+            "Karaoke your favorite song, all the way through",
+            "Drink some water, please",
+            "Look into a mirror, and dance, baby",
+            "\"He was a mighty hunter before the LORD: wherefore it is said, Even as Nimrod the mighty hunter before the LORD!\" -Genesis 10:9",
+            "Take off your shoes for a while",
+            "Ask out that person you like (¬‿¬)",
+            "Listen to this, [insert song here]",
+            "Draw a picture",
+            "That I think you'll like: ",
+            "Run around the block",
+            "Try and take a nap, it might feel good?",
+            "Try some soylent",
+            "Eat a snack",
+            "Quick! What's 7x7!",
+            "Put your phone on a table, and walk out"
+
+                            };
 
 
     @Override
@@ -37,8 +60,6 @@ public class ChallengeDisplay extends AppCompatActivity {
         challengeText.setText( getRandChallenge(), TextView.BufferType.EDITABLE);
 //        createChallengeList();
 //        list.saveList();
-
-
     }
 
     public void goButton(View view) {
@@ -60,22 +81,21 @@ public class ChallengeDisplay extends AppCompatActivity {
         return challenges[(int) Math.floor(Math.random()*challenges.length)];
     }
 
-    protected void createChallengeList()
+    protected ChallengeList getChallengeList()
     {
 
         try{
             FileOutputStream os = openFileOutput(challengeFile, Context.MODE_PRIVATE);
             FileInputStream is = openFileInput(challengeFile);
             ChallengeList list = new ChallengeList(is, os);
-            list.addChallenge(ChallengeFactory.makeChallenge("challenge", String.valueOf(Math.random()*10), "cool"));
-            System.err.println(list);
+            return list;
         }
         catch(IOException e)
         {
             e.printStackTrace(System.err);
         }
 
-
+        return null;
     }
 
 
